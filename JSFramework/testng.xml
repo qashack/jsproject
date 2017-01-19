@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Automation Suite">
+  <test name="Smoke">
+    <parameter name="Category" value="Smoke"/>
+    <parameter name="Machine" value="localhost"/>
+    <parameter name="Browser" value="Chrome"/>
+    <classes>
+      <class name="com.application.tests.LoginLogoutTest"/>
+    </classes>
+  </test> <!-- Smoke -->
+  <test name="Regression">
+    <parameter name="Category" value="Regression"/>
+    <parameter name="Machine" value="localhost"/>
+    <parameter name="Browser" value="Chrome"/>
+    <classes>
+      <class name="com.application.tests.CreateCompanyTest"/>
+      <class name="com.application.tests.DeleteCompanyTest"/>
+      <class name="com.application.tests.CreateEmployeeTest"/>
+      <class name="com.application.tests.VerifyEmployeeInDirectoryTest"/>
+      <class name="com.application.tests.VerifyHRDashboardTest"/>
+      <class name="com.application.tests.DeleteEmployeeTest"/>
+    </classes>
+  </test> <!-- Regression -->
+</suite> <!-- Automation Suite -->
